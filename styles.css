@@ -9,6 +9,7 @@ body {
     max-width: 100%;
     padding: 20px;
     box-sizing: border-box;
+    text-align: center;
 }
 
 .decks-container {
@@ -37,7 +38,6 @@ body {
 
 #card-container {
     margin-top: 20px;
-    text-align: center;
 }
 
 .card {
@@ -46,26 +46,25 @@ body {
     padding: 20px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     margin-bottom: 20px;
-    min-height: 300px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 .card img {
     max-width: 100%;
-    max-height: 300px;
+    max-height: 60vh;
     border-radius: 10px;
+    display: block;
+    margin: 0 auto;
 }
 
 .controls {
     display: flex;
     justify-content: space-between;
-    margin-top: 20px;
+    gap: 10px;
+    padding: 0 10px;
 }
 
 .control-btn {
-    padding: 10px 15px;
+    padding: 12px 0;
     font-size: 16px;
     border: none;
     border-radius: 50px;
@@ -73,9 +72,12 @@ body {
     color: white;
     cursor: pointer;
     flex: 1;
-    margin: 0 5px;
 }
 
 .control-btn:hover {
     background: #0062cc;
+}
+
+.control-btn:active {
+    transform: scale(0.98);
 }
