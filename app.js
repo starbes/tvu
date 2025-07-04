@@ -15,7 +15,7 @@ const demoData = {
     decks: [
         {
             id: 1,
-            name: "История",
+            name: "ТВУ",
             cards: [
                 {
                     front: "assets/history_q1.jpg",
