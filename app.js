@@ -10,22 +10,23 @@ let state = {
     isFlipped: false
 };
 
-// Данные колод и карточек (можно заменить на запрос к бэкенду)
+// Демо-данные (замените на свои)
 const demoData = {
     decks: [
         {
             id: 1,
-            name: "ТВУ",
+            name: "История",
             cards: [
                 {
-                    front: "assets/history_q1.jpg",
-                    back: "assets/history_a1.jpg",
-                    mnemonic: "assets/history_m1.jpg"
+                    front: "assets/history_q1.jpg", // Вопрос
+                    back: "assets/history_a1.jpg"   // Ответ
                 },
-                // ... другие карточки
+                {
+                    front: "assets/history_q2.jpg",
+                    back: "assets/history_a2.jpg"
+                }
             ]
-        },
-        // ... другие колоды
+        }
     ]
 };
 
@@ -81,24 +82,6 @@ function showCurrentCard() {
 function flipCard() {
     state.isFlipped = !state.isFlipped;
     showCurrentCard();
-    
-    // Если перевернули на обратную сторону, показываем мнемонику через 2 секунды
-    if (state.isFlipped) {
-        setTimeout(() => {
-            const card = state.currentDeck.cards[state.currentCardIndex];
-            tg.showPopup({
-                title: "Мнемоника",
-                message: "Используйте этот образ для запоминания:",
-                buttons: [{
-                    id: 'ok',
-                    type: 'default',
-                    text: 'OK'
-                }]
-            }, () => {});
-            
-            // Здесь можно добавить показ картинки с мнемоникой
-        }, 2000);
-    }
 }
 
 // Следующая карточка
