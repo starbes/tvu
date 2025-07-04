@@ -9,17 +9,23 @@
 </head>
 <body>
     <div class="container">
+        <!-- Упрощённый заголовок -->
         <h1 id="deck-title">Выберите колоду</h1>
+        
+        <!-- Список колод -->
         <div id="decks-list" class="decks-container"></div>
         
+        <!-- Контейнер карточки (изначально скрыт) -->
         <div id="card-container" class="hidden">
-            <div id="card-content" class="card">
+            <div class="card">
                 <img id="card-image" src="" alt="Карточка">
             </div>
+            
+            <!-- Компактные кнопки управления -->
             <div class="controls">
-                <button id="prev-btn" class="control-btn">⬅️ Назад</button>
-                <button id="flip-btn" class="control-btn">🔄 Перевернуть</button>
-                <button id="next-btn" class="control-btn">Вперед ➡️</button>
+                <button id="prev-btn" class="control-btn">⬅️</button>
+                <button id="flip-btn" class="control-btn">🔄</button>
+                <button id="next-btn" class="control-btn">➡️</button>
             </div>
         </div>
     </div>
