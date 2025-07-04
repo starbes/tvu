@@ -18,24 +18,24 @@ const demoData = {
             name: "ТВУ",
             cards: [
                 {
-                    front: "s1-1.JPG", // Вопрос
-                    back: "s1-2.JPG"   // Ответ
+                    front: "./s1-1.JPG", // Вопрос
+                    back: "./s1-2.JPG"   // Ответ
                 },
                 {
-                    front: "s2-1.JPG", // Вопрос
-                    back: "s2-2.JPG"   // Ответ
+                    front: "./s2-1.JPG", // Вопрос
+                    back: "./s2-2.JPG"   // Ответ
                 },
                 {
-                    front: "s3-1.JPG", // Вопрос
-                    back: "s3-2.JPG"   // Ответ
+                    front: "./s3-1.JPG", // Вопрос
+                    back: "./s3-2.JPG"   // Ответ
                 },
                 {
-                    front: "s4-1.JPG", // Вопрос
-                    back: "s4-2.JPG"   // Ответ
+                    front: "./s4-1.JPG", // Вопрос
+                    back: "./s4-2.JPG"   // Ответ
                 },
                 {
-                    front: "s5-1.JPG", // Вопрос
-                    back: "s5-2.JPG"   // Ответ
+                    front: "./s5-1.JPG", // Вопрос
+                    back: "./s5-2.JPG"   // Ответ
                 }
             ]
         }
